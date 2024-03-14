@@ -41,6 +41,8 @@ module MarketplaceApi
       generator.helper = false
     end
     
+    # Config Autoloads
+
     config.api_only = true
   end
 end
