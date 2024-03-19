@@ -36,6 +36,7 @@ module MarketplaceApi
       generator.view_specs false
       generator.helper_specs false
       generator.stylesheet = false
+      generator.javascripts = false
     end
     
     config.api_only = true
