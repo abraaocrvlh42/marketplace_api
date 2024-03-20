@@ -4,8 +4,11 @@ Rails.application.routes.draw do
   mount Rswag::Ui::Engine => '/api-docs'
   mount Rswag::Api::Engine => '/api-docs'
 
-  namespace :api, defaults: { format: :json }
-                              constraints: { subdomain: 'api' }, path: '/'  do
+  namespace :api, defaults: { format: :json },
+                                constraints: { subdomain: 'api' }, path: '/'  do
+    scope module: :api do
+      
+    end
   end
 
   get 'up' => 'rails/health#show', as: :rails_health_check
