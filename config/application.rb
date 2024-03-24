@@ -34,6 +34,8 @@ module MarketplaceApi
       generator.test_framework :rspec, fixture: true
       generator.fixture_replacement :factory_bot, dir: 'spec/factories'
       generator.view_specs false
+      generator.helper_specs false
+      
     end
     
     config.api_only = true
