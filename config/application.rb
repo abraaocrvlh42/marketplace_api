@@ -30,6 +30,7 @@ module MarketplaceApi
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
 
+    # Config Generators for RSpec
     config.generators do |generator|
       generator.test_framework :rspec, fixture: true
       generator.fixture_replacement :factory_bot, dir: 'spec/factories'
@@ -40,6 +41,8 @@ module MarketplaceApi
       generator.helper = false
     end
     
+    # Config Autoloads
+
     config.api_only = true
   end
 end
