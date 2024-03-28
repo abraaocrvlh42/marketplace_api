@@ -42,7 +42,7 @@ module MarketplaceApi
     end
     
     # Config Autoloads
-
+    config.autoload_paths += %W(\#{config.root/lib})
     config.api_only = true
   end
 end
